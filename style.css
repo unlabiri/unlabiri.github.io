@@ -20,13 +20,18 @@ body {
 }
 
 .container {
-  max-width: 576px;
-  margin: 0 auto;
+  width: 550px;
+  height: 180px;
+  font-size: 14px;
   padding: 1rem;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  box-sizing: border-box;
+  overflow: hidden; /* optional: prevents overflow if content is too tall */
 }
+
 
 
 .site-title {
@@ -45,12 +50,6 @@ body {
 
 main {
   padding-bottom: 4rem;
-}
-
-.container {
-  max-width: 800px;
-  padding: 2rem;
-  margin: auto;
 }
 
 .line {
