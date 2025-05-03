@@ -1,56 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #fdf6e3;
-  font-family: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
-  color: #333;
+const lines = document.querySelectorAll('.line');
+let i = 0;
+
+function typeLine() {
+  if (i < lines.length) {
+    const line = lines[i];
+    const text = line.textContent;
+    line.textContent = '';
+    let j = 0;
+    const interval = setInterval(() => {
+      if (j < text.length) {
+        line.textContent += text[j];
+        j++;
+      } else {
+        clearInterval(interval);
+        i++;
+        typeLine();
+      }
+    }, 50);
+  }
 }
 
-.terminal {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.6;
-}
-
-.line {
-  color: #268bd2;
-}
-
-.prompt {
-  color: #2aa198;
-  font-weight: bold;
-}
-
-.label {
-  color: #6c71c4;
-  font-weight: bold;
-}
-
-.output {
-  margin-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-.links a,
-.socials a {
-  display: inline-block;
-  margin-right: 1rem;
-  color: #268bd2;
-  text-decoration: none;
-}
-
-.links a:hover,
-.socials a:hover {
-  text-decoration: underline;
-}
-
-.highlight {
-  color: #cb4b16;
-  font-weight: bold;
-}
-
-.sub {
-  color: #839496;
-  font-style: italic;
-}
+typeLine();
