@@ -82,23 +82,4 @@ button#themeToggle {
 }
 
 
-.site-header h1 {
-  font-family: 'JetBrains Mono', monospace; /* restore terminal font */
-  color: #b58900; /* match terminal gold/yellow */
-  font-weight: bold;
-  font-size: 2rem;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-  margin: 0;
-}
-
-.site-header .hover-cd {
-  color: #d33682; /* Solarized pink/magenta */
-  opacity: 0;
-  margin-left: 0.5rem;
-  transition: opacity 0.3s ease;
-  font-family: inherit; /* Keep font consistent */
-}
-
 
