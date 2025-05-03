@@ -1,29 +1,56 @@
 body {
-  font-family: 'JetBrains Mono', monospace;
-  background-color: #fffaf0; /* match the original terminal-style page */
   margin: 0;
+  padding: 0;
+  background: #fdf6e3;
+  font-family: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+  color: #333;
+}
+
+.terminal {
   padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
 }
 
-.site-header {
-  margin-bottom: 2rem;
+.line {
+  color: #268bd2;
 }
 
-.site-header h1 {
-  color: #b46328;
-  font-size: 2rem;
+.prompt {
+  color: #2aa198;
+  font-weight: bold;
+}
+
+.label {
+  color: #6c71c4;
+  font-weight: bold;
+}
+
+.output {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.links a,
+.socials a {
   display: inline-block;
-  position: relative;
-  cursor: pointer;
+  margin-right: 1rem;
+  color: #268bd2;
+  text-decoration: none;
 }
 
-.hover-cd {
-  color: #d5a76d;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  margin-left: 0.5rem;
+.links a:hover,
+.socials a:hover {
+  text-decoration: underline;
 }
 
-.hover-reveal:hover .hover-cd {
-  opacity: 1;
+.highlight {
+  color: #cb4b16;
+  font-weight: bold;
+}
+
+.sub {
+  color: #839496;
+  font-style: italic;
 }
