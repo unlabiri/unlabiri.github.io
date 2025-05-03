@@ -1,76 +1,56 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
-
-nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #fff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  padding: 1rem 0;
-  z-index: 10;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
+  background: #fdf6e3;
+  font-family: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
   color: #333;
+}
+
+.terminal {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.line {
+  color: #268bd2;
+}
+
+.prompt {
+  color: #2aa198;
   font-weight: bold;
 }
 
-.hero {
-  height: 100vh;
-  background: linear-gradient(to right, #d4f0f6, #fdfcdc);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.label {
+  color: #6c71c4;
+  font-weight: bold;
 }
 
-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 4rem 1rem;
-}
-
-h2 {
+.output {
+  margin-left: 2rem;
   margin-bottom: 1rem;
-  color: #007acc;
 }
 
-.project {
-  margin-bottom: 2rem;
+.links a,
+.socials a {
+  display: inline-block;
+  margin-right: 1rem;
+  color: #268bd2;
+  text-decoration: none;
 }
 
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  list-style: none;
-  padding: 0;
+.links a:hover,
+.socials a:hover {
+  text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  background: #e9ecef;
-  font-size: 0.9rem;
+.highlight {
+  color: #cb4b16;
+  font-weight: bold;
+}
+
+.sub {
+  color: #839496;
+  font-style: italic;
 }
