@@ -80,32 +80,4 @@ button#themeToggle {
   color: var(--link);
   text-decoration: underline;
 }
-.site-header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-.site-header h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: var(--accent);
-  font-family: 'Courier New', monospace;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-}
-
-.site-header .hover-cd {
-  color: var(--label);
-  margin-left: 0.5rem;
-  opacity: 0;
-  transform: translateX(5px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  font-family: inherit;
-}
-
-.site-header h1:hover .hover-cd {
-  opacity: 1;
-  transform: translateX(0);
-}
 
