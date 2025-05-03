@@ -2,15 +2,44 @@ body {
   margin: 0;
   padding: 0;
   background: #fdf6e3;
-  font-family: 'JetBrains Mono', 'JetBrains Mono Fallback', monospace;
+  font-family: 'JetBrains Mono', monospace;
   color: #333;
 }
 
-.terminal {
-  padding: 2rem;
+.site-header {
+  position: sticky;
+  top: 0;
+  background: #fdf6e3;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+}
+
+.site-title {
+  font-weight: bold;
+  color: #b58900;
+  font-size: 1.2rem;
+}
+
+.theme-toggle {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: not-allowed; /* disabled for now */
+  opacity: 0.5;
+}
+
+main {
+  padding-bottom: 4rem;
+}
+
+.container {
   max-width: 800px;
+  padding: 2rem;
   margin: auto;
-  line-height: 1.6;
 }
 
 .line {
