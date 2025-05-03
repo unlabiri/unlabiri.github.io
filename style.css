@@ -80,14 +80,7 @@ button#themeToggle {
   color: var(--link);
   text-decoration: underline;
 }
-.site-header h1 {
-  color: #b58900; /* solarized yellow/orange */
-  font-weight: bold;
-  font-size: 2rem;
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-}
+
 
 .site-header .hover-cd {
   color: #d33682; /* solarized magenta */
