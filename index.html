@@ -9,30 +9,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="terminal">
-    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; whoami</div>
-    <div class="output">
-      <div><span class="label">👤 User:</span> Ada Aljabiri</div>
-      <div><span class="label">📌 About:</span> Computer Science and Mathematics undergrad passionate about web development, full-stacks, and digital accessibility.</div>
-      <div><span class="label">🧰 Stack(s):</span> Java | Python | C | React | SQL | .NET | Node.js | HTML/CSS | Git</div>
-    </div>
+  <nav class="site-header">
+    <span class="site-title">ada.dev</span>
+    <button class="theme-toggle" disabled>🌓</button> <!-- Disabled for now -->
+  </nav>
 
-    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls links/</div>
-    <div class="links">
-      <a href="#">projects/</a>
-      <a href="#">gallery/</a>
-    </div>
+  <main>
+    <section class="container">
+      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; whoami</div>
+      <div class="output">
+        <div><span class="label">👤 User:</span> Ada Aljabiri</div>
+        <div><span class="label">📌 About:</span> Computer Science and Mathematics undergrad passionate about web development, full-stacks, and digital accessibility.</div>
+        <div><span class="label">🧰 Stack(s):</span> Java | Python | C | React | SQL | .NET | Node.js | HTML/CSS | Git</div>
+      </div>
+    </section>
 
-    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls -a resume/</div>
-    <div class="output">
-      <div>2025-01-01 <span class="highlight">Demo</span> <span class="sub">(mock)</span></div>
-      <div>2024-12-12 <span class="highlight">Voting System  using React, C, and SQL. Includes authentication, ballot user interface, and backend validation</span> <span class="sub">(by request)</span></div>
-    </div>
+    <section class="container">
+      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls links/</div>
+      <div class="links">
+        <a href="#">projects/</a>
+        <a href="#">gallery/</a>
+      </div>
+    </section>
 
-    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; cat socials.md</div>
-    <div class="socials">
-      <a href="#" target="_blank">🐙 GitHub</a>
-    </div>
+    <section class="container">
+      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls -a resume/</div>
+      <div class="output">
+        <div>2025-01-01 <span class="highlight">Demo</span> <span class="sub">(mock)</span></div>
+        <div>2024-12-12 <span class="highlight">Voting System using React, C, and SQL. Includes authentication, ballot user interface, and backend validation</span> <span class="sub">(by request)</span></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; cat socials.md</div>
+      <div class="socials">
+        <a href="#" target="_blank">🐙 GitHub</a>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
