@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ada.dev</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>whoami | Ada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <h1><a href="/">ada.dev</a></h1>
-    <button id="themeToggle" aria-label="Toggle Theme">🌓</button>
-  </nav>
+  <main class="terminal">
+    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; whoami</div>
+    <div class="output">
+      <div><span class="label">👤 User:</span> Ada Aljabiri</div>
+      <div><span class="label">📌 About:</span> CS undergrad passionate about web dev, UI, and digital accessibility.</div>
+      <div><span class="label">🧰 Stack(s):</span> HTML | CSS | Bootstrap | JavaScript | React | GitHub Pages</div>
+    </div>
 
-  <main>
-    <section class="terminal-line">
-      <span class="user">&lt;ada@ada.dev&gt;</span> <span class="path">~</span> <span class="arrow">&gt;===&gt;</span> <strong>whoami</strong>
-    </section>
-    <section class="info">
-      <p><strong class="label">User:</strong> Ada Aljabiri</p>
-      <p><strong class="label">About:</strong> CS undergrad & web dev, passionate about design systems and good UX.</p>
-      <p><strong class="label">Stack:</strong> HTML | CSS | JS | Bootstrap | APIs</p>
-    </section>
+    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls links/</div>
+    <div class="links">
+      <a href="#">projects/</a>
+      <a href="#">blog/</a>
+      <a href="#">gallery/</a>
+    </div>
 
-    <section class="terminal-line">
-      <span class="user">&lt;ada@ada.dev&gt;</span> <span class="path">~</span> <span class="arrow">&gt;===&gt;</span> <strong>ls links/</strong>
-    </section>
-    <ul class="link-grid">
-      <li><a href="#">projects/</a></li>
-      <li><a href="#">blog/</a></li>
-      <li><a href="#">contact/</a></li>
-    </ul>
+    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls -a resume/</div>
+    <div class="output">
+      <div>2025-05-01 <span class="highlight">Marketing Internship Demo</span> <span class="sub">(mock)</span></div>
+      <div>2025-04-01 <span class="highlight">Web Dev Showcase</span> <span class="sub">(interactive)</span></div>
+    </div>
+
+    <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; cat socials.md</div>
+    <div class="socials">
+      <a href="#" target="_blank">🐙 GitHub</a>
+      <a href="#" target="_blank">🐦 Twitter</a>
+      <a href="#" target="_blank">💬 Discord</a>
+    </div>
   </main>
 
   <script src="script.js"></script>
