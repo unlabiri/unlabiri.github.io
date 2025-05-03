@@ -80,11 +80,6 @@ button#themeToggle {
   color: var(--link);
   text-decoration: underline;
 }
-.site-header {
-  margin: 2rem auto;
-  text-align: center;
-}
-
 .site-header h1 {
   color: #b58900; /* solarized yellow/orange */
   font-weight: bold;
