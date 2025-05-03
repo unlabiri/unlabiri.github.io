@@ -1,0 +1,5 @@
+title: whoami | Ada Aljabiri
+description: Personal site
+baseurl: "" 
+url: "https://unlabiri.github.io" # replace with your actual GitHub Pages URL
+markdown: kramdown
