@@ -11,16 +11,11 @@
 <body>
   <main class="terminal">
     <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; whoami</div>
-<div class="output">
-  {% for post in site.posts %}
-    <div>
-      {{ post.date | date: "%Y-%m-%d" }}
-      <a class="highlight" href="{{ post.url }}">{{ post.title }}</a>
-      <span class="sub">(blog)</span>
+    <div class="output">
+      <div><span class="label">👤 User:</span> Ada Aljabiri</div>
+      <div><span class="label">📌 About:</span> Computer Science and Mathematics undergrad passionate about web development, full-stacks, and digital accessibility.</div>
+      <div><span class="label">🧰 Stack(s):</span> HTML | CSS | Bootstrap | JavaScript | React | GitHub Pages</div>
     </div>
-  {% endfor %}
-</div>
-
 
     <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls links/</div>
     <div class="links">
