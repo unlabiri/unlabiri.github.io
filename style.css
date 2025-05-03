@@ -1,23 +1,18 @@
-const lines = document.querySelectorAll('.line');
-let i = 0;
-
-function typeLine() {
-  if (i < lines.length) {
-    const line = lines[i];
-    const text = line.textContent;
-    line.textContent = '';
-    let j = 0;
-    const interval = setInterval(() => {
-      if (j < text.length) {
-        line.textContent += text[j];
-        j++;
-      } else {
-        clearInterval(interval);
-        i++;
-        typeLine();
-      }
-    }, 50);
-  }
+body {
+  background-color: #1e1e1e;
+  color: #00ff00;
+  font-family: 'JetBrains Mono', monospace;
+  padding: 20px;
 }
 
-typeLine();
+.terminal .line {
+  margin-bottom: 10px;
+}
+
+.prompt {
+  color: #00ff00;
+}
+
+.output p {
+  margin: 0 0 10px 20px;
+}
