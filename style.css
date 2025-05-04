@@ -40,12 +40,6 @@ body {
   }
 }
 
-.container.links-container,
-.container.resume-container {
-  padding: 0.5rem 1rem;
-  margin: 0.25rem auto;
-  gap: 0.5rem;
-}
 
 .site-title {
   font-weight: bold;
@@ -124,3 +118,11 @@ main {
 .socials {
   width: 100%;
 }
+.container.links-container,
+.container.resume-container {
+  padding: 0.5rem 1rem; 
+  margin: 0.1rem auto;
+  min-height: 0 !important;
+   height: auto !important;
+}
+
