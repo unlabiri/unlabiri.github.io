@@ -125,4 +125,34 @@ main {
   min-height: 0 !important;
    height: auto !important;
 }
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.social-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-link .url {
+  opacity: 0;
+  visibility: hidden;
+  margin-left: 0.5rem;
+  color: gray;
+  font-size: 0.9rem;
+  text-decoration: underline wavy;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.social-link:hover .url {
+  opacity: 1;
+  visibility: visible;
+}
 
