@@ -9,11 +9,13 @@ body {
 .links-container {
   padding-bottom: 0;
   margin-bottom: 0;
+  min-height: unset;
 }
 
 .resume-container {
   padding-top: 0;
   margin-top: 0;
+  min-height: unset;
 }
 
 .site-header {
