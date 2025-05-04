@@ -155,4 +155,33 @@ main {
   opacity: 1;
   visibility: visible;
 }
+.date-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.squiggle-link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.squiggle-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 4px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="4"><path d="M0,2 C2,0 4,4 6,2 C8,0 10,4 12,2" stroke="%230369a1" fill="transparent" stroke-width="1.5" /></svg>');
+  background-repeat: repeat-x;
+  background-size: 12px 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.squiggle-link:hover::after {
+  opacity: 1;
+}
+
 
