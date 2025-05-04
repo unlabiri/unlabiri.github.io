@@ -1,0 +1,35 @@
+---
+layout: none
+title: Projects
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>projects | ada.dev</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-header">
+    <span class="site-title"><a href="/">ada.dev</a></span>
+  </nav>
+
+  <main>
+    <section class="container">
+      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt;</span> &gt;==&gt; ls projects/</div>
+      <div class="output">
+        {% for post in site.posts %}
+          <div>
+            <a class="date-link" href="{{ post.url }}" target="_blank">{{ post.date | date: "%Y-%m-%d" }}</a>
+            <a class="highlight squiggle-link" href="{{ post.url }}" target="_blank">{{ post.title }}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+  </main>
+</body>
+</html>
