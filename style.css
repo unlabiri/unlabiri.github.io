@@ -8,6 +8,9 @@ body {
 .links-container {
   gap: 0.25rem; /* tighter spacing just for this section */
 }
+.resume-container {
+  margin-top: 0;
+}
 
 .site-header {
   position: sticky;
