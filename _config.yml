@@ -3,3 +3,7 @@ description: Personal site
 baseurl: "" 
 url: "https://unlabiri.github.io"
 markdown: kramdown
+
+collections:
+  posts:
+    output: true
