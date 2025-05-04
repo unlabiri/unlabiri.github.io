@@ -5,11 +5,9 @@ body {
   font-family: 'JetBrains Mono', monospace;
   color: #333;
 }
-.links-container {
-  gap: 0.25rem; /* tighter spacing just for this section */
-}
+
 .resume-container {
-  margin-top: 0;
+  margin: 0 auto 1rem auto; /* top 0, bottom 1rem like normal */
 }
 
 .site-header {
