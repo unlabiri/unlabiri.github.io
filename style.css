@@ -119,4 +119,11 @@ main {
 .socials {
   width: 100%;
 }
+.container.links-container,
+.container.resume-container {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  height: auto !important;
+}
 
