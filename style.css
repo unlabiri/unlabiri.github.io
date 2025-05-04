@@ -6,11 +6,14 @@ body {
   color: #333;
 }
 
-.resume-container {
-  margin: 0 auto 1rem auto; /* top 0, bottom 1rem like normal */
-}
 .links-container {
+  padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.resume-container {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 .site-header {
