@@ -5,6 +5,9 @@ body {
   font-family: 'JetBrains Mono', monospace;
   color: #333;
 }
+.resume-container {
+  gap: 0.25rem; /* tighter spacing just for this section */
+}
 
 .site-header {
   position: sticky;
