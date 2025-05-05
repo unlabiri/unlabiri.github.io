@@ -1,4 +1,4 @@
-const icons = ['user', 'github', 'about', 'folder', 'stacks'];
+const icons = ['user', 'github', 'about', 'folder', 'stacks', 'email'];
 
 icons.forEach(name => {
   const el = document.getElementById(`${name}-icon`);

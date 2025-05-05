@@ -42,7 +42,7 @@ body {
 
 .site-title {
   font-weight: bold;
-  color: #b58900;
+  color: #355db9;
   font-size: 1.2rem;
 }
 
@@ -59,7 +59,7 @@ main {
 }
 
 .line {
-  color: #268bd2;
+  color: #82afcf;
 }
 
 .prompt {
@@ -172,4 +172,17 @@ main {
 .squiggle-link:hover {
   text-decoration: underline wavy;
   text-decoration-color: #cb4b16;
+}
+
+.site-title::after {
+  content: '';
+  opacity: 0;
+  margin-left: 0.0005ch; /* Reduced margin for even closer spacing */
+  transition: opacity 0.2s ease-in-out;
+  color: #62a5c4; /* Matches your existing theme color */
+}
+
+.site-title:hover::after {
+  content: ' (cd)';
+  opacity: 1;
 }
