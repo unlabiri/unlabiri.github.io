@@ -1,12 +1,11 @@
 ---
 layout: post
-title: "Voting System"
+title: "PacVote"
 date: 2024-12-12
 ---
 
 This is the full write-up for the voting system project. It includes details about the design, tech stack, and API integrations.
 
-## PacVote — Full-Stack Voting Application
 
 ### Overview
 
