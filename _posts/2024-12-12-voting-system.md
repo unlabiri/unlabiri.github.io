@@ -14,7 +14,7 @@ PacVote is a full-stack web application designed to simulate a secure and user-f
 
 This project was developed through a team-based collaboration, where each member focused on specific technical areas. My individual contributions centered on implementing the database connectivity logic, enabling secure communication through Cross-Origin Resource Sharing (CORS), and managing the flow of data between the front end and back end. These responsibilities reflect a strong understanding of how the layers of a web application interact, and how to ensure they function together efficiently and securely.
 
-### Demonstration
+
 ### Demonstration
 <div style="text-align: center;">
   <video width="560" height="315" controls>
