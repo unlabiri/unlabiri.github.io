@@ -17,11 +17,10 @@ This project was developed through a team-based collaboration, where each member
 ### Demonstration
 <div style="text-align: center;">
   <video width="560" height="315" controls>
-    <source src="{{ '/assets/361.mp4' | relative_url }}" type="video/quicktime">
+    <source src="{{ '/assets/361.mp4' | relative_url }}" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
-
 
 
 ### Technical Breakdown

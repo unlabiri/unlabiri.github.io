@@ -1,9 +1,13 @@
-title: whoami | Ada Aljabiri
-description: Personal site
-baseurl: "" 
+title: Ada Aljabiri
+description: Software engineer. Résumé, experience and projects.
+baseurl: ""
 url: "https://unlabiri.github.io"
 markdown: kramdown
 
 collections:
   posts:
     output: true
+
+# keep repo-only files off the live site
+exclude:
+  - README.md

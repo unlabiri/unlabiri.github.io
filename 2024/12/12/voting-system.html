@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voting System | Ada Aljabiri</title>
+<!-- generated from _posts/2024-12-12-voting-system.md -->
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="lace-top" aria-hidden="true"></div>
+<div class="col">
+  <a class="back" href="/">← ada aljabiri</a>
+  <main class="post">
+    <h1>Voting System</h1>
+    <p class="date">December 12, 2024</p>
+    <article>
+      <p>This is the full write-up for the voting system project. It includes details about the design, tech stack, and API integrations.</p>
+<h2>PacVote — Full-Stack Voting Application</h2>
+<h3>Overview</h3>
+<p>PacVote is a full-stack web application designed to simulate a secure and user-friendly digital voting system. Built with a modern technology stack combining a React front end and an ASP.NET Core back end, the project emphasizes real-world considerations like user authentication, vote submission integrity, and result transparency. The system interacts with a relational SQL database to manage users, ballots, and votes in a structured, reliable manner.</p>
+<p>This project was developed through a team-based collaboration, where each member focused on specific technical areas. My individual contributions centered on implementing the database connectivity logic, enabling secure communication through Cross-Origin Resource Sharing (CORS), and managing the flow of data between the front end and back end. These responsibilities reflect a strong understanding of how the layers of a web application interact, and how to ensure they function together efficiently and securely.</p>
+<h3>Demonstration</h3>
+<div style="text-align: center;">
+  <video width="560" height="315" controls>
+    <source src="/assets/361.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<h3>Technical Breakdown</h3>
+<p>The application supports a step-by-step voting process. Users begin by logging in or registering an account. Once authenticated, they are guided through an interactive ballot interface where they can make selections across different races. After completing their selections, users review their votes before submitting. The system then securely processes the data and stores it in the database.</p>
+<h4>Front-End Integration</h4>
+<p>The front end was developed using React and communicates with the back end through RESTful API calls. I was responsible for setting up the data exchange between the interface and the server. This included implementing the logic to send login information, retrieve ballot data, and submit the final vote.</p>
+<p>This process required client-side validation, handling asynchronous network requests, and presenting clear messages to the user in response to success or error states. I also ensured that the front end reflected accurate data returned by the server, maintaining application state and consistency throughout the user experience.</p>
+<h4>Back-End Connectivity</h4>
+<p>On the server side, I worked on developing API endpoints that process data, validate user input, and generate structured responses in JSON format. My work involved integrating this logic with the underlying database operations, especially for actions like vote submission and result retrieval.</p>
+<p>I contributed to the controller logic that handles requests and responses, making sure that the back-end services aligned with the data needs of the front-end components. This included translating user selections into database-compatible formats and verifying that only valid and complete information reached the database.</p>
+<h4>CORS Configuration</h4>
+<p>Because the front end and back end run on different domains during development, I configured CORS policies to allow secure communication between them. CORS is essential in modern full-stack apps where services are separated, and misconfiguration can cause failed requests or security vulnerabilities.</p>
+<p>I specified which domains, HTTP methods, and headers should be allowed, tailoring the policy to be as secure and specific as possible. This ensured the React front end could talk to the ASP.NET back end without exposing the application to cross-origin attacks.</p>
+<h3>Challenges and Problem Solving</h3>
+<p>One of the biggest challenges in the project was maintaining reliable communication between the front end and back end, especially during user authentication and voting phases. I worked through issues related to request timing, inconsistent data formats, and unexpected API failures. By introducing consistent data handling patterns and robust error checking, I helped improve the reliability and user experience of the system.</p>
+<p>Another learning opportunity came from managing data transformations between the front end, back end, and database. For example, vote selections made in the React interface needed to be converted into a format suitable for insertion into the SQL database. This required a strong understanding of how each system layer represents and processes data.</p>
+<h3>Conclusion</h3>
+<p>My work on PacVote demonstrates a well-rounded skill set in full-stack development. I played a key role in connecting the user interface, back-end logic, and database functionality. I also handled CORS configuration, created and integrated API endpoints, and ensured the application remained secure and consistent across services.</p>
+<p>This project gave me the opportunity to develop practical skills that are critical for building scalable and maintainable web applications. It also deepened my understanding of how front-end and back-end systems communicate, how to manage user interactions and data flow, and how to troubleshoot integration issues in a multi-layered architecture.</p>
+    </article>
+  </main>
+</div>
+<footer>
+  <div class="col">
+    <span>© 2026 ada aljabiri</span>
+    <span><a href="mailto:aljabiri.ne@gmail.com">email</a> · <a href="https://www.linkedin.com/in/ada-aljabiri/">linkedin</a> · <a href="https://github.com/unlabiri">github</a></span>
+  </div>
+</footer>
+<script>
+  // follow the visitor's light/dark setting on write-up pages too
+  if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark';
+</script>
+</body>
+</html>

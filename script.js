@@ -1,22 +1,14 @@
-const icons = ['user', 'github', 'about', 'folder', 'stacks', 'email'];
-
-icons.forEach(name => {
-  const el = document.getElementById(`${name}-icon`);
-  if (el) {
-    fetch(`assets/icons/${name}.svg`)
-      .then(res => res.text())
-      .then(svg => {
-        // Create a temporary wrapper to parse the SVG string
-        const temp = document.createElement('div');
-        temp.innerHTML = svg;
-        const svgEl = temp.querySelector('svg');
-
-        if (svgEl) {
-          svgEl.classList.add('icon');
-          el.innerHTML = '';
-          el.appendChild(svgEl);
-        }
-      })
-      .catch(err => console.error(`Error loading ${name}.svg:`, err));
-  }
-});
+// theme toggle, copy-email and résumé preview for index.html
+(()=>{
+  const root=document.documentElement, t=document.getElementById('theme');
+  const set=d=>{root.dataset.theme=d?'dark':'';t.textContent=d?'light':'dark'};
+  set(matchMedia('(prefers-color-scheme: dark)').matches);
+  t.onclick=()=>set(root.dataset.theme!=='dark');
+  const note=document.getElementById('copied');let tm;
+  document.getElementById('copy').onclick=async()=>{
+    try{await navigator.clipboard.writeText('aljabiri.ne@gmail.com');note.textContent='copied ✓'}catch(e){note.textContent='couldn’t copy'}
+    clearTimeout(tm);tm=setTimeout(()=>note.textContent='',2000);
+  };
+  const show=()=>{const f=document.createElement('iframe');f.src='assets/resume.pdf#view=FitH';f.title='Ada Aljabiri résumé';document.getElementById('viewer').replaceChildren(f)};
+  if(location.protocol==='file:'){show()}else{fetch('assets/resume.pdf',{method:'HEAD'}).then(r=>{if(r.ok)show()}).catch(()=>{})}
+})();

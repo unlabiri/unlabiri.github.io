@@ -1,18 +1,36 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ page.title }} | Ada Aljabiri</title>
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
 </head>
 <body>
-  <main class="container">
+<div class="lace-top" aria-hidden="true"></div>
+<div class="col">
+  <a class="back" href="{{ '/' | relative_url }}">← ada aljabiri</a>
+  <main class="post">
     <h1>{{ page.title }}</h1>
-    <p><small>{{ page.date | date: "%B %d, %Y" }}</small></p>
+    <p class="date">{{ page.date | date: "%B %-d, %Y" }}</p>
     <article>
       {{ content }}
     </article>
   </main>
+</div>
+<footer>
+  <div class="col">
+    <span>© 2026 ada aljabiri</span>
+    <span><a href="mailto:aljabiri.ne@gmail.com">email</a> · <a href="https://www.linkedin.com/in/ada-aljabiri/">linkedin</a> · <a href="https://github.com/unlabiri">github</a></span>
+  </div>
+</footer>
+<script>
+  // follow the visitor's light/dark setting on write-up pages too
+  if (matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark';
+</script>
 </body>
 </html>

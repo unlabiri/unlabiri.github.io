@@ -1,68 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>whoami | Ada</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ada Aljabiri</title>
+<meta name="description" content="Ada Aljabiri, software engineer. CS + Math, University of Nebraska–Lincoln 2026. Product manager and developer on the UNL Cochlear Implant Lab mobile hearing test.">
+<meta property="og:title" content="Ada Aljabiri — Software Engineer">
+<meta property="og:description" content="Résumé, experience and projects.">
+<meta property="og:url" content="https://unlabiri.github.io/">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="site-header">
-    <span class="site-title">ada.dev</span>
-    <button class="theme-toggle" disabled>🌓</button> <!-- Disabled for now -->
-  </nav>
+<div class="lace-top" aria-hidden="true"></div>
+
+<div class="col">
+  <header>
+    <a class="me" href="#">ada aljabiri</a>
+    <nav aria-label="Main">
+      <a class="opt" href="#resume">résumé</a>
+      <a class="opt" href="#experience">experience</a>
+      <a class="opt" href="#projects">projects</a>
+      <a class="opt" href="#contact">contact</a>
+      <button class="toggle" id="theme" type="button">dark</button>
+    </nav>
+  </header>
 
   <main>
-    <section class="container">
-      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; whoami</div>
-      <div class="output">
-        <div><span class="label"><span id="user-icon"></span> User:</span> Ada Aljabiri</div>
-        <div><span class="label"><span id="about-icon"></span> About:</span> Computer Science and Mathematics undergrad passionate about web development, full-stacks, and digital accessibility.</div>
-        <div><span class="label"><span id="stacks-icon"></span> Stack(s):</span> Java | Python | C | React | SQL | .NET | Node.js | HTML/CSS | Git</div>
+    <div class="intro">
+      <h1>hi, i’m ada.</h1>
+      <p>I’m a software engineer and a 2026 computer science graduate, with a minor in mathematics, from the University of Nebraska–Lincoln. My favorite work so far was in the <a href="https://mobilehearingtest.unl.edu" target="_blank" rel="noopener">UNL Cochlear Implant Research Lab</a>, where I was the product manager and a developer for a mobile hearing test that’s now live and earned the highest honor at UNL Senior Design.</p>
+      <p>This summer I interned at Election Systems &amp; Software, building a ballot printing module used across 42 states. I’m looking for full-time software engineering roles.</p>
+      <div class="links">
+        <a class="pill" href="assets/resume.pdf" download>download résumé ↓</a>
+        <a href="mailto:aljabiri.ne@gmail.com">email</a>
+        <a href="https://www.linkedin.com/in/ada-aljabiri/" target="_blank" rel="noopener">linkedin ↗</a>
+        <a href="https://github.com/unlabiri" target="_blank" rel="noopener">github ↗</a>
+      </div>
+    </div>
+
+    <section id="resume" aria-labelledby="rh">
+      <h2 id="rh">résumé</h2>
+      <div class="resume">
+        <div class="viewer" id="viewer"><div class="ph">your résumé preview shows here once resume.pdf is added</div></div>
+        <div class="bar"><span>updated september 2026</span><span><a href="assets/resume.pdf" target="_blank" rel="noopener">open ↗</a>&nbsp;&nbsp;&nbsp;<a href="assets/resume.pdf" download>download pdf ↓</a></span></div>
       </div>
     </section>
 
-<section class="container links-container">
-  <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls links/</div>
-  <div class="links">
-    <a href="resume.html">resume/</a>
-  </div>
-</section>
+    <section id="experience" aria-labelledby="eh">
+      <h2 id="eh">experience</h2>
+      <ul class="list">
+        <li><span class="t">Product Manager &amp; Developer, SECD Cochlear Implant Research Lab<span class="tag hl">highlight</span>
+          <small>I led a 10-person team from requirements through production handoff to deliver a mobile hearing test that is live at <a href="https://mobilehearingtest.unl.edu" target="_blank" rel="noopener">mobilehearingtest.unl.edu</a>. We built real-time audiogram rendering, offline support, role-based access, and HIPAA-compliant data storage, and shipped five production releases. The project earned Platinum distinction, the highest honor at UNL Senior Design.</small>
+          <small class="stackline">React · Express · REDCap · Auth0 · Tone.js · Chart.js · Cypress · Vitest · Travis CI</small></span><span class="d">jan 2025 – may 2026</span></li>
+        <li><span class="t">Software Engineer Intern, Election Systems &amp; Software
+          <small>I architected a full-stack ballot printing module for Election Navigator, a platform used in 42 states, built from scratch in C# and Angular. It includes a locally installed print agent, background API jobs, and two-way communication between printers and the platform. I also wrote parsing for printer configuration files and turned it into a customizable settings screen.</small>
+          <small class="stackline">C# · Angular · Hangfire · Agile</small></span><span class="d">may – aug 2026</span></li>
+        <li><span class="t">Learning Assistant, UNL School of Computing
+          <small>I ran small-group problem-solving sessions and C programming labs for Computer Science I, a high-enrollment intro course, and held weekly office hours.</small></span><span class="d">aug 2025 – may 2026</span></li>
+        <li><span class="t">B.S. Computer Science, minor in Mathematics
+          <small>University of Nebraska–Lincoln. GPA 3.6 and Women in Engineering Scholar.</small></span><span class="d">may 2026</span></li>
+      </ul>
+    </section>
 
+    <section id="projects" aria-labelledby="ph">
+      <h2 id="ph">projects</h2>
+      <div class="proj">
+        <div class="row"><span class="name">Project N.O.A.H<span class="tag">vr game</span></span><span class="d">jan – may 2026</span></div>
+        <p>A VR game built in Unity with SteamVR, in which players manage ecological biomes aboard a generation ship traveling to Alpha Centauri. I co-developed it with a four-person team for the Software Engineering course in Emerging Media Arts, writing modular C# systems and coordinating our work through GitHub feature branches.</p>
+        <div class="meta"><a href="https://github.com/unlabiri/NoahArk" target="_blank" rel="noopener">code ↗</a>Unity · SteamVR · C# · GitHub</div>
+      </div>
+      <div class="proj">
+        <div class="row"><span class="name">Monkeying Around<span class="tag">award</span></span><span class="d">nov 2025</span></div>
+        <p>An AR-style body-tracking game that uses a webcam for real-time, full-body collision detection, with difficulty that scales as your score climbs. It won the Fitness Focus Award at CornHacks 2025, one of six winners across three focus areas.</p>
+        <div class="meta"><a href="https://github.com/unlabiri/chimpanzeehacks" target="_blank" rel="noopener">code ↗</a>Python · OpenCV · MediaPipe · Pygame</div>
+      </div>
+      <div class="proj">
+        <div class="row"><span class="name">PacVote</span><span class="d">dec 2024</span></div>
+        <p>A full-stack secure voting app with authentication, ballot submission, REST endpoints, and structured SQL storage for results. I built the database connectivity, CORS setup, and the data flow between the React front end and the ASP.NET Core back end.</p>
+        <div class="meta"><a href="2024/12/12/voting-system.html">write-up ↗</a><a href="assets/361.mp4" target="_blank" rel="noopener">demo video ↗</a>React · ASP.NET Core · SQL · REST</div>
+      </div>
+    </section>
 
-<section class="container resume-container">
-  <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; ls -a demonstrations/</div>
-  <div class="output">
-    <div>
-      <a class="date-link" href="https://unlabiri.github.io/2024/12/12/voting-system.html" target="_blank">2024-12-12</a>
-      <a class="highlight squiggle-link" href="https://unlabiri.github.io/2024/12/12/voting-system.html" target="_blank">
-        Voting System using React, C, and SQL. Includes authentication, ballot user interface, and backend validation
-      </a>
-      <span class="sub">(Demo)</span>
-    </div>
-  </div>
-</section>
+    <section id="accomplishments" aria-labelledby="ah">
+      <h2 id="ah">accomplishments</h2>
+      <ul class="list">
+        <li><span class="t">Platinum distinction, UNL Senior Design<small>The program’s highest honor, for the Cochlear Implant Lab’s mobile hearing test.</small></span><span class="d">2026</span></li>
+        <li><span class="t">Fitness Focus Award, CornHacks 2025<small>For Monkeying Around, one of six winning projects.</small></span><span class="d">nov 2025</span></li>
+        <li><span class="t">IBM Data Analyst Professional Certificate<small>An 11-course program from IBM on Coursera covering Excel, SQL, relational databases, Python, Jupyter, and Cognos Analytics, finished with a capstone analyzing real-world data. <a href="https://coursera.org/verify/professional-cert/IWOHOIDG6E86" target="_blank" rel="noopener">Verify ↗</a></small></span><span class="d">dec 2025</span></li>
+        <li><span class="t">Women in Engineering Scholar<small>University of Nebraska–Lincoln.</small></span><span class="d">2022 – 2026</span></li>
+      </ul>
+    </section>
 
-    <section class="container">
-      <div class="line"><span class="prompt">&lt;ada@aljabiri.dev&gt; 🗁 ~</span> &gt;==&gt; cat socials.md</div>
-<div class="socials">
-  <a class="social-link" href="https://github.com/unlabiri" target="_blank">
-    <span id="github-icon"></span>
-    <span class="label">GitHub</span>
-    <span class="url">https://github.com/unlabiri</span>
-    </a>
-  <a class="social-link" href="mailto:galjabiri2@huskers.unl.edu">
-    <span id="email-icon"></span>
-    <span class ="label">Email</span>
-    <span class="url">contact me with questions</span>
-  </a>
-</div>
+    <section id="stack" aria-labelledby="sh">
+      <h2 id="sh">tools i use</h2>
+      <div class="stack"><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Python</span><span>C#</span><span>C / C++</span><span>SQL</span><span>React</span><span>Angular</span><span>Next.js</span><span>Node / Express</span><span>ASP.NET Core</span><span>Unity</span><span>Git</span><span>Docker</span><span>Travis CI</span><span>Excel</span><span>Jupyter</span><span>Cognos Analytics</span></div>
+    </section>
 
+    <!-- reading list: add favorite books, then remove the "hidden" attribute -->
+    <section id="reading" aria-labelledby="bh" hidden>
+      <h2 id="bh">reading</h2>
+      <p class="sub">a few favorites.</p>
+      <ul class="list">
+        <li><span class="t">[title]</span><span class="d">[author]</span></li>
+        <li><span class="t">[title]</span><span class="d">[author]</span></li>
+        <li><span class="t">[title]</span><span class="d">[author]</span></li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="ch">
+      <h2 id="ch">contact</h2>
+      <p>The best way to reach me is email: <a href="mailto:aljabiri.ne@gmail.com">aljabiri.ne@gmail.com</a>
+        <button class="toggle" id="copy" type="button" style="margin-left:8px">copy</button><span class="copied" id="copied" role="status" aria-live="polite"></span></p>
     </section>
   </main>
+</div>
 
-  <script src="script.js"></script>
+<footer>
+  <div class="col">
+    <span>© 2026 ada aljabiri</span>
+    <span><a href="mailto:aljabiri.ne@gmail.com">email</a> · <a href="https://www.linkedin.com/in/ada-aljabiri/">linkedin</a> · <a href="https://github.com/unlabiri">github</a> · <a href="assets/resume.pdf" download>résumé</a></span>
+  </div>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>
