@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Voting System"
+title: "PacVote"
 date: 2024-12-12
 ---
 
 This is the full write-up for the voting system project. It includes details about the design, tech stack, and API integrations.
 
-## PacVote — Full-Stack Voting Application
 
 ### Overview
 
 PacVote is a full-stack web application designed to simulate a secure and user-friendly digital voting system. Built with a modern technology stack combining a React front end and an ASP.NET Core back end, the project emphasizes real-world considerations like user authentication, vote submission integrity, and result transparency. The system interacts with a relational SQL database to manage users, ballots, and votes in a structured, reliable manner.
 
 This project was developed through a team-based collaboration, where each member focused on specific technical areas. My individual contributions centered on implementing the database connectivity logic, enabling secure communication through Cross-Origin Resource Sharing (CORS), and managing the flow of data between the front end and back end. These responsibilities reflect a strong understanding of how the layers of a web application interact, and how to ensure they function together efficiently and securely.
+
 
 ### Demonstration
 <div style="text-align: center;">
